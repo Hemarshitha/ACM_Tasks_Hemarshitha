@@ -1,0 +1,107 @@
+/* src/App.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Bradley Hand,cursive;
+  background-image: url('https://img.freepik.com/premium-photo/mug-coffee-sits-pink-table_337384-114125.jpg?size=626&ext=jpg&ga=GA1.1.1373188048.1726771270&semt=ais_hybrid'); /* Add the image path here */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+}
+
+.App {
+  text-align: center;
+}
+
+.todo-container {
+  background-color: #cb958e;
+  padding: 80px;
+  border-radius: 20px;
+  box-shadow: 0 0 50px #432818;
+  width: 300px;
+  
+}
+.ll{
+  font-size: 50px;
+
+
+}
+
+h1 {
+  margin-bottom: 20px;
+  margin-top: -40px;
+}
+
+/* src/App.css */
+
+input {
+  margin-right: 10px;
+  padding: 10px; /* Increases padding inside the input box */
+  width: 240px; /* Increases the width */
+  border: 2px solid #6F1D1B; /* Adds a border with color */
+  border-radius: 8px; /* Rounds the corners */
+  outline: none; /* Removes default outline when input is focused */
+  font-size: 16px; /* Increases the font size */
+  color: #333; /* Changes text color */
+  background-color: #f1f1f1; /* Changes background color */
+}
+
+input:focus {
+  border-color: black; /* Changes border color when focused */
+  box-shadow: 0 0 10px #432818; /* Adds a glow effect when focused */
+}
+
+
+button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: double black;
+  background-color: #9A275A;
+  box-shadow: 0 0 10px #432818 ;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+
+}
+
+button:hover {
+  background-color: #432818;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  flex: 1;
+  text-align: left;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #450920;
+}
+
+.edit-box {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-box input {
+  margin-bottom: 10px;
+}
