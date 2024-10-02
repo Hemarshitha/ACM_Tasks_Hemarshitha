@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700'>
+</head>
+<style>
+ * {
+        margin: 0;
+        box-sizing: border-box;
+        
+    }
+ .navbar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 6px 30px;
+        height: 270px;
+        background-color: #9a8c98;
+        font-size: 30px;
+        font-style: italic;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        box-shadow: 10px 10px 9px grey;
+       
+    }
+.nav-link {
+    display: inline-block; /* Ensure links are treated as inline blocks */
+    font-size: 24px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid transparent; /* Transparent border for initial state */
+    border-radius: 15px; /* Rounded corners */
+    background-color: #E2CFCF; /* Background color of the box */
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    margin:0 5px;
+    position:relative;
+    top:-25vh;
+    left:21cm;
+    white-space:nowrap;
+}
+
+.nav-link:hover {
+    color: #91715f; /* Change text color on hover */
+    border-color: #91715f; /* Change border color on hover */
+    background-color: #e1d0c1; /* Slightly darker background on hover */
+}
+
+  #box2 {
+        background-color: #f2e9e4;
+        height: 55cm;
+        width: 255px;
+        position: relative;
+        top: -250px;
+        left: 40px;
+        box-shadow: 10px 10px 9px grey;
+    }
+  #box3 {
+        background-image: url("C:\\Users\\HEMA\\Downloads\\WhatsApp Image 2024-02-29 at 00.05.01_cddda233.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 170px;
+        width: 170px;
+        position: absolute;
+        top: 50px;
+        left: 80px;
+        border-radius: 50%;
+        box-shadow: 10px 10px 9px grey;
+    }
+  #content {
+        font-weight:  400;
+        margin-top: 200px;
+    }
+  ul {
+        padding: 0;
+        margin: 0;
+        
+    }
+  li {
+        margin: 10px 0px;
+    }
+  .social-icons {
+        display: flex;
+        flex-direction: column; /* Align icons vertically */
+        margin-top: 30px; /* Adjusted margin to provide space between content and icons */
+    }
+  .social-icon {
+        font-size: 40px;
+        color: black;
+        margin-bottom: 15px; /* Adjusted margin to provide space between icons */
+    }
+  .social-text {
+        font-size: 13px;
+        color: black;
+        text-decoration: none;
+        font-weight: 400;
+        padding: 2px;
+    }
+    
+    .social-icon:hover .social-text {
+    color: #91715f; 
+    font-weight: bold; 
+    text-decoration: underline;
+    }
+   
+    p.underlined-word {
+        font-style: italic;
+        font-weight: 900;
+        font-size: larger;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: left;
+        margin-top: 40px;
+        border-bottom: 5px double black; /* Added border-bottom style */
+        padding-bottom: 8px; /* Added padding-bottom for space between text and line */
+    }
+  .exp{
+        padding-left: 10px;
+        padding-top: 30px;
+       
+    }
+ 
+  
+    .random-content {
+       text-align: center;
+       
+       margin-left: 300px;
+      
+    }
+   .head{
+        font-size: 900;
+        background-color: #eddcd2;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 900;
+        padding: 10px;
+        text-align: center; /* Center text horizontally */
+        line-height: 20px; 
+        
+    }
+   .header {
+    font-size: 40px;
+    margin-top: -53cm;
+    font-style: italic;
+    border-bottom: 8px double black;
+    padding-bottom: 20px;
+    margin-bottom: 40px; 
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    text-align: center;
+}
+ .h {
+    font-size: 50px;
+    margin-top: -53cm;
+    font-style: italic;
+    padding-bottom: 20px;
+    margin-bottom: 20px; 
+    width: 70%;
+    margin-left: auto;
+    margin-right: 4%;
+    white-space: nowrap;
+    text-align: center;
+}
+.profile {
+    text-align: center;
+    padding: 50px;
+    line-height: 1.6;    /* Adjust line-height for spacing between lines */
+    margin-left: 50px;   /* Adjust margin to move the paragraph to the right */
+    margin-right: 50px;  /* Adjust margin to move the paragraph to the right */
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+hr{
+    border: 1px solid black;
+    margin: auto;
+}
+.education{
+        font-size: 900;
+        background-color: #eddcd2;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 900;
+        padding: 10px;
+        text-align: center; /* Center text horizontally */
+        line-height: 20px; 
+        margin-top: 50px;
+        
+    }
+.education-section {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 50px;
+    
+    }
+table {
+        border-collapse: collapse;
+        width: 50%;
+        margin-top: 25px;
+        margin-left: 24%;
+        
+        
+    }
+th{
+        border: 5px double black;
+        padding: 12px;
+        text-align: center;
+        background-color: #C49792;
+        
+    }
+td{
+        border: 5px double black;
+        padding: 12px;
+        text-align: center;
+        background-color: #E2CFCF;
+    }
+.skills{
+        font-size: 900;
+        background-color: #eddcd2;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 900;
+        padding: 10px;
+        text-align: center; /* Center text horizontally */
+        line-height: 20px; 
+        margin-top: 25px;
+        
+    }
+.second{
+        border-collapse: collapse;
+        width: 70%;
+        margin-top: 25px;
+        margin-left: 15%;
+        
+    }
+#email a{
+    text-decoration:none;
+    color:black;
+}
+#email a:hover{
+    color: #91715f; 
+    font-weight: bold; 
+    text-decoration: underline;
+
+}
+.projects{
+        font-size: 900;
+        background-color: #eddcd2;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 900;
+        padding: 10px;
+        text-align: center; /* Center text horizontally */
+        line-height: 20px; 
+        margin-top: 25px;
+}
+.project-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px; /* Adjust to position it above the header */
+    padding:20px;
+    margin-left:1cm;
+    background-color:  #E2CFCF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    text-align: center;
+    width: 200px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.project p {
+    font-size: 16px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.description-box {
+    background-color: #C49792; /* Background color for the description box */
+    padding: 10px;
+    text-align: center;
+     border: 5px double black;
+}
+
+.description-box p {
+    font-size: 20px;
+    color: #333;
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #9a8c98;
+            color: black;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .back-to-top:hover {
+            background-color: #7a6b68;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="navbar">
+         <a href="#about-me" class="nav-link">About Me</a>
+         <a href="#education" class="nav-link">Education</a>
+         <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#expertise" class="nav-link">Expertise</a>
+        <a href="#projects" class="nav-link">Projects</a>
+                <h1 class="h">HEMARSHITHA SANGAMREDDI</h1>
+                </div>
+        <div id="box2">
+        </div>
+        <div id="box3">
+            <div id="content">
+                <ul>
+                <li>Amrita Vishwa Vidyapeetham</li>
+                <li>Kerala, Amritapuri</li>
+                <li id="email">
+                <a href="mailto:hemarshitha2006@gmail.com">hemarshitha2006@gmail.com</a>
+                </li>
+                </ul>
+
+                <div class="social-icons">
+                    <div class="social-icon">
+                        <i class="fab fa-instagram-square">
+                            <a class="social-text" href="https://www.instagram.com/your_username/" target="_blank"> Follow on Instagram</a>
+                        </i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-twitter">
+                            <a class="social-text" href="https://twitter.com/?lang=en" target="_blank">Follow on Twitter</a>
+                        </i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                            <a class="social-text" href="https://www.linkedin.com/feed/" target="_blank">Find me on Linked-in</a>
+                        </i>
+                    </div>
+                    <p id="contact" class="underlined-word">CONTACT</p>
+                    <ul class="exp">
+                        <li>Can contact throught above social-media platforms</li>
+                        <li>Contact-No:9515110579</li>
+                        <li>Can use the above Email</li>
+                    </ul>
+                    <p id="expertise" class="underlined-word">EXPERTISE</p>
+                    <ul class="exp">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PYTHON</li>
+                        <li>JAVA</li>
+                        <li>SQL</li>
+                        <li>DJANGO</li>
+                        <li>PANDAS</li>
+                        <li>NUMPY</li>
+                        <li>TKINTER</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="random-content">
+        <h1 class="header">SOFTWARE DEVELOPER</h1>
+        <h2 id="about-me" class="head">ABOUT ME</h2>
+        <p class="profile">I am Hemarshitha Sangamreddi with a solid educational background from Amrita Vishwa Vidyapeetham, Amritapuri.
+            I Possess a very detail interest and a commitment to deliver high-quality software.
+            I have Proven expertise in HTML, CSS, and Python, with a strong foundation in web development which allows me to translate complex requirements into simple and effective solutions</p>
+            <hr style="width:65%";>
+            <h2 id="education" class="education">EDUCATION</h2>
+             <div class="education-section1">
+                <div>
+                    <table>
+                        <tr>
+                            <th>School/College</th>
+                            <th>Grade</th>
+                            <th>Percentage</th>
+                        </tr>
+                        <tr>
+                            <td>Timpany Senior Secondary School</td>
+                            <td>1-10</td>
+                            <td>95%</td>
+                        </tr>
+                    </table>
+                </div>
+    <!-- Education Section 2 -->
+                <div>
+                    <table>
+                        <tr>
+                            <th>School/College</th>
+                            <th>Grade</th>
+                            <th>Percentage</th>
+                        </tr>
+                        <tr>
+                            <td>Narayana Junior College</td>
+                            <td>11-12</td>
+                            <td>97.5%</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <table>
+                        <tr>
+                            <th>School/College</th>
+                            <th>Grade</th>
+                            <th>CGPA</th>
+                        </tr>
+                        <tr>
+                            <td>Amrita Vishwa Vidyapeetham</td>
+                            <td>B-TECH</td>
+                            <td>8.43</td>
+                        </tr>
+                    </table>
+                </div>
+                <h2 id="skills" class="skills">SKILLS</h2>
+                <div>
+                    <table class="second">
+                        <tr>
+                            <th>TECHNICAL SKILLS</th>
+                            <th>ANALYTICAL SKILLS</th>
+                            <th>INNOVATIVE THINKING</th>
+                        </tr>
+                        <tr>
+                            <td>Programming languages (e.g., Java, Python, JavaScript)</td>
+                            <td>Data analysis and management</td>
+                            <td>Proposing and implementing innovative solutions</td>
+                        </tr>
+                        <tr>
+                            <td>Web development (HTML, CSS, JavaScript, etc.)</td>
+                            <td>Critical thinking</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Database Management</td>
+                            <td> </td>
+                            <td>Contributing to process improvements</td>
+                        </tr>
+                    </table>
+                     <h2 id="projects" class="projects">PROJECTS</h2>
+<div class="project-gallery">
+    <div class="project">
+        <img src="https://www.railjournal.com/wp-content/uploads/2017/09/aa3b97d9f1f634673c6057f564783c74.jpg" alt="Project 1">
+        <div class="description-box">
+            <p>Train Mangement System</p>
+        </div>
+    </div>
+    <div class="project">
+        <img src="https://partheniumprojects.com/wp-content/uploads/2019/01/Online-quiz-2.png" alt="Project 2">
+        <div class="description-box">
+            <p>Quiz Management System</p>
+        </div>
+    </div>
+    <div class="project">
+        <img src="https://www.codingal.com/resources/wp-content/uploads/2023/07/Create-Random-Password-Generator-Program-Using-Python.png" alt="Project 3">
+        <div class="description-box">
+            <p>Password Generator</p>
+        </div>
+    </div>
+     <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+</div>
+
+                </div>
+            </div>
+            <script>
+    // Smooth scrolling
+    document.querySelectorAll('.nav-link').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Show or hide back-to-top button based on scroll position
+    const backToTopButton = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 200) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    // Back to top button functionality
+    backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+           </body>
+</html>
+
+
