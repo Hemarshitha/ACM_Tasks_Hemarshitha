@@ -10,3 +10,4 @@ and after it got connected i used commands like "sudo yum update -y"
 
 ![Screenshot (437)](https://github.com/user-attachments/assets/6a5091bf-0822-44eb-8fa9-8b7cf3467bc8)
 
+![Screenshot (438)](https://github.com/user-attachments/assets/8964e77b-befb-4527-ba88-8772a046f9a7)
